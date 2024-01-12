@@ -16,7 +16,7 @@ function App() {
         <img src={logoLuisa} className="logo" alt="Vite logo" />
       </div>
 
-      <h1>Projeto Luisa Simões </h1>
+      <h1>Projeto Luiza Simões </h1>
 
       <div className="card">
         <p>
