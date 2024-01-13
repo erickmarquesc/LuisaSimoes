@@ -1,33 +1,16 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import logoLuisa from './assets/logo branca.svg'
-import './App.css'
+import { defaultTheme } from "./styles/theme/default"
+import { ThemeProvider } from "styled-components"
+import { BrowserRouter } from "react-router-dom"
+import { GlobalStyle } from "./styles/global"
+import { Router } from "./Router"
 
-function App() {
+export const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-        <img src={logoLuisa} className="logo" alt="Vite logo" />
-      </div>
-
-      <h1>Projeto Luiza Simões </h1>
-
-      <div className="card">
-        <p>
-          Faltam <code>2 meses</code> para entrega do projeto
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Entre em contato com o desenvolvedor em caso de dúvidas
-      </p>
-    </>
+    <ThemeProvider theme={defaultTheme}>
+      <GlobalStyle />
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+    </ThemeProvider>
   )
 }
-
-export default App
