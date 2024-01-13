@@ -1,0 +1,15 @@
+import { Container } from "../containers/styles"
+import { ContainerRange } from "./styles"
+
+export const Ranger = () => {
+  return (
+    <Container>
+      <ContainerRange>
+        <h1>Como um projeto pode te ajudar</h1>
+        <p>
+          Contratar um arquiteto é abrir as portas para a transformação e a realização de sonhos. É como ter um guia em uma jornada para criar espaços únicos, funcionais e cheios de significado. É investir em qualidade de vida, valorização do patrimônio e bem-estar. Cada cantinho da sua construção ou reforma será planejado, com cronogramas, responsabilidade, expertise e paixão. Nós unimos beleza e funcionalidade e este é um encanto que só a arquitetura pode oferecer.
+        </p>
+      </ContainerRange>
+    </Container>
+  )
+}
