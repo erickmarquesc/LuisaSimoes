@@ -37,7 +37,7 @@ export const Services = () => {
           servicesItem.map((item, index) => {
             return (
               <ServicesCard key={index}>
-                <img src={item.icon} alt="" />
+                <img src={item.icon} alt="Ícone de contato: telefone (WhatsApp) e e-mail." />
                 <div>
                   <h1>{item.title}</h1>
                   <p>
