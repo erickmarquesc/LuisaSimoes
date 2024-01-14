@@ -5,7 +5,7 @@ import { ContentAbout } from "./styles"
 export const About = () => {
   return (
     <Container>
-      <ContentAbout>
+      <ContentAbout id="about">
         <img src={imgAbout} alt="Arquiteta Luisa, sorridente, sentada à mesa branca com cabelos longos caindo sobre o ombro. Na mesa, materiais de arquitetura, projetos e paletas de cores de parede." />
         <div>
           <strong>
