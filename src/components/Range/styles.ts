@@ -16,7 +16,6 @@ export const ContainerRange = styled(Content)`
 
     @media(max-width: 900px){
       max-width: 100%;
-      background-color: red;
     }
   };
 
