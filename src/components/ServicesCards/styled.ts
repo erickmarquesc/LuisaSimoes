@@ -36,6 +36,11 @@ export const ServicesCard = styled.div`
       text-align: justify;
       font-size: 1.6rem;
       max-width: 800px;
+
+      span{
+        color: ${(props) => props.theme['tertiary']};
+        cursor: pointer;
+      }
     }
   }
 
