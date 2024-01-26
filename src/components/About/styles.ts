@@ -7,6 +7,10 @@ export const ContentAbout = styled(Content)`
 
   img{
     max-width: 400px;
+
+    @media(max-width: 800px){
+      width: 25%;
+    }
   };
 
   div{
@@ -26,15 +30,15 @@ export const ContentAbout = styled(Content)`
       font-size: 2rem;
       text-align: justify;
       margin-bottom: 12px;
+
+      @media(max-width: 800px){
+        font-size: 1.6rem;
+      }
     };
   };
 
-  @media(max-width: 800px){
+  @media(max-width: 500px){
     
     flex-direction: column;
-
-    img{
-      width: 25%;
-    };
   }
 `
