@@ -15,11 +15,13 @@ interface IServicesItemProps {
 
 export const Services = () => {
 
-  const [expanded, setExpanded] = useState(false);
+  const [expandedItems, setExpandedItems] = useState<Array<boolean>>([false, false, false]);
 
-  const toggleText = () => {
-    setExpanded(!expanded);
-  }; 
+  const toggleText = (index: number) => {
+    const newExpandedItems = [...expandedItems];
+    newExpandedItems[index] = !newExpandedItems[index];
+    setExpandedItems(newExpandedItems);
+  };
 
   const servicesItem: IServicesItemProps[] = [
     {
@@ -53,13 +55,13 @@ export const Services = () => {
                 <div>
                   <h1>{item.title}</h1>
                   <p>
-                    {expanded
-                      ?  item.description
+                    {expandedItems[index]
+                      ? item.description
                       : item.predescription
                     }
                     <br />
-                    <span onClick={toggleText}>
-                      {expanded ? ' Ler menos' : ' Ler mais'}
+                    <span onClick={() => toggleText(index)}>
+                      {expandedItems[index] ? ' Ler menos' : ' Ler mais'}
                     </span>
                   </p>
                 </div>
