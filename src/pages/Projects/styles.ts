@@ -10,7 +10,13 @@ export const ContentProject = styled.div`
   }
 
   .textArea{
+    h1{
+      font-family: "Sanchez", serif;
+      color: ${(props) => props.theme['tertiary']};
+    }
+    
     p{
+      margin-top: 16px;
       max-width: 550px;
       font-size: 2rem;
       text-align: justify;
