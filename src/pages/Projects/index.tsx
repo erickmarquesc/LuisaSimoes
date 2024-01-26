@@ -3,7 +3,10 @@ import { Content } from "../../components/containers/styles";
 import { projects } from "../../Utils/projectsList";
 import { ContainerProject, ContentProjectHero } from "./styles";
 import { CTA } from "../../components/CTA";
-import ScrollCarousel from 'scroll-carousel-react';
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css"
+
+/* import ScrollCarousel from 'scroll-carousel-react'; */
 
 export const Projects = () => {
   const { projectId } = useParams();
@@ -19,24 +22,22 @@ export const Projects = () => {
               <div className="textArea">
                 <h1>{project.name}</h1>
                 <h2>{project.title}</h2>
-                <CTA />
-              </div>
-              <div className="contentImgs">
-                <img src={project.img} className="imgShort" />
-                {
-                  project.img2 && (
-                    <img src={project.img2} className="imgLong" />
-                  )
-                }
               </div>
             </div>
+            <ImageGallery
+              autoPlay
+              slideInterval={3000}
+              showNav={false}
+              items={project.imgSlider} />
+            <CTA />
+
           </ContentProjectHero>
         ) : (
           <p>Projeto não encontrado.</p>
         )}
       </Content>
 
-      {project &&(
+      {/* {project &&(
           <ScrollCarousel
             className="carousel"
             autoplay
@@ -51,7 +52,7 @@ export const Projects = () => {
               })
             }
           </ScrollCarousel>
-      )}
+      )} */}
     </ContainerProject>
   );
 };
