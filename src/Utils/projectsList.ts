@@ -1,14 +1,33 @@
-import imgFrist from "../assets/imgs/imageTeste.svg"
-import imgSecondy from "../assets/imgs/imageTeste2.svg"
-import imgSlider1 from "../assets/imgs/imgSlider1.svg"
-import imgSlider2 from "../assets/imgs/imgSlider2.svg"
-import imgSlider3 from "../assets/imgs/imgSlider3.svg"
-import imgSlider4 from "../assets/imgs/imgSlider4.svg"
-import imgSlider5 from "../assets/imgs/imgSlider5.svg"
-import imgSlider6 from "../assets/imgs/imgSlider6.svg"
-import imgSlider7 from "../assets/imgs/imgSlider7.svg"
-import imgSlider8 from "../assets/imgs/imgSlider8.svg"
+/* IMG BANHEIRO MAR */
+import imgSliderBanheiroMar from "../assets/imgs/projectsimg/BanheiroMar/banheiromar.svg"
+import imgSliderBanheiroMarII from "../assets/imgs/projectsimg/BanheiroMar/banheiromarII.svg"
+import imgSliderBanheiroMarIII from "../assets/imgs/projectsimg/BanheiroMar/banheiromarIII.svg"
 
+/* IMG LOFT */
+import imgSliderLoft520 from "../assets/imgs/projectsimg/loft/Loft520.svg"
+import imgSliderLoft520I from "../assets/imgs/projectsimg/loft/Loft520I.svg"
+import imgSliderLoft520II from "../assets/imgs/projectsimg/loft/Loft520II.svg"
+import imgSliderLoft520III from "../assets/imgs/projectsimg/loft/Loft520III.svg"
+import imgSliderLoft520IV from "../assets/imgs/projectsimg/loft/Loft520IV.svg"
+import imgSliderLoft520V from "../assets/imgs/projectsimg/loft/Loft520V.svg"
+import imgSliderLoft520VI from "../assets/imgs/projectsimg/loft/Loft520VI.svg"
+
+/* IMG SALA DE ESTAR */
+import imgSlidersalaDeEstarI from "../assets/imgs/projectsimg/SalaDeEstar/salaDeEstarI.svg"
+import imgSlidersalaDeEstarII from "../assets/imgs/projectsimg/SalaDeEstar/salaDeEstarII.svg"
+import imgSlidersalaDeEstarIII from "../assets/imgs/projectsimg/SalaDeEstar/salaDeEstarIII.svg"
+import imgSlidersalaDeEstarIV from "../assets/imgs/projectsimg/SalaDeEstar/salaDeEstarIV.svg"
+
+/* IMG COZINHA MODERNA */
+import imgSliderCozinhaModerna from "../assets/imgs/projectsimg/CozinhaModerna/cozinhaModerna.svg"
+import imgSliderCozinhaModernaI from "../assets/imgs/projectsimg/CozinhaModerna/cozinhaModernaI.svg"
+import imgSliderCozinhaModernaII from "../assets/imgs/projectsimg/CozinhaModerna/cozinhaModernaII.svg"
+import imgSliderCozinhaModernaIII from "../assets/imgs/projectsimg/CozinhaModerna/cozinhaModernaIII.svg"
+
+/* IMG COMERCIAL */
+import imgSliderComecial from "../assets/imgs/projectsimg/Comercial/comecial.svg"
+import imgSliderComecialI from "../assets/imgs/projectsimg/Comercial/comecialI.svg"
+import imgSliderComecialII from "../assets/imgs/projectsimg/Comercial/comecialII.svg"
 
 type ListProjects = {
   id: number;
@@ -17,18 +36,47 @@ type ListProjects = {
   img: string;
   img2: string;
   imgSlider: string[];
-  description: string;
 }
 
 export const projects: ListProjects[] = [
   {
-    id: 1,
-    name: 'Sala e Cozinha',
+    id: 3,
+    name: 'Banheiro Mar',
     title: 'Projeto residencial',
-    img: imgFrist,
-    img2: imgSecondy,
-    imgSlider: [imgSlider1, imgSlider2, imgSlider3, imgSlider4, imgSlider5, imgSlider6, imgSlider7, imgSlider8],
-    description: `Esse projeto foi pensado na integração da cozinha com as salas de TV e de Estar, que eram separados por algumas paredes no apartamento.
-O conceito de integração e praticidade foram aplicados nesse projeto. Priorizamos o dia a dia da família e como essa interação seria vantajosa para o convívio da família e amigos. 
-Por ter o conceito aberto aplicado, a escolha dos matérias era seguir tudo a mesma linha de tons e cores, nas salas e na cozinha.Usamos o mesmo piso nos três ambientes, para dar a sensação de continuidade e ligação, os tons de materiais nos móveis são é o mesmo, a iluminação também faz a ligação entres os ambientes, deixando ainda mais acolhedor e confortável.` }
+    img: imgSliderBanheiroMar,
+    img2: '',
+    imgSlider: [imgSliderBanheiroMar, imgSliderBanheiroMarII, imgSliderBanheiroMarIII],
+  },
+  {
+    id: 4,
+    name: 'Loft',
+    title: 'Projeto residencial',
+    img: imgSliderLoft520,
+    img2: "",
+    imgSlider: [imgSliderLoft520, imgSliderLoft520I, imgSliderLoft520II, imgSliderLoft520III, imgSliderLoft520IV, imgSliderLoft520V, imgSliderLoft520VI],
+  },
+  {
+    id: 5,
+    name: 'Sala de Estar',
+    title: 'Projeto residencial',
+    img: imgSlidersalaDeEstarI,
+    img2: "",
+    imgSlider: [imgSlidersalaDeEstarI, imgSlidersalaDeEstarII, imgSlidersalaDeEstarIII, imgSlidersalaDeEstarIV],
+  },
+  {
+    id: 6,
+    name: 'Cozinha Moderna',
+    title: 'Projeto residencial',
+    img: imgSliderCozinhaModerna,
+    img2: "",
+    imgSlider: [imgSliderCozinhaModerna, imgSliderCozinhaModernaI, imgSliderCozinhaModernaII, imgSliderCozinhaModernaIII],
+  },
+  {
+    id: 7,
+    name: 'Comercial',
+    title: 'Projeto comercial',
+    img: imgSliderComecial,
+    img2: "",
+    imgSlider: [imgSliderComecial, imgSliderComecialI, imgSliderComecialII],
+  },
 ]
