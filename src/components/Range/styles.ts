@@ -6,6 +6,11 @@ export const ContainerRange = styled(Content)`
   flex-wrap: wrap;
   gap: 12px;
 
+  @media(max-width: 900px){
+    justify-content: center;
+    text-align: center;
+  }
+
   h1{
     max-width: 200px;
   };
@@ -16,5 +21,10 @@ export const ContainerRange = styled(Content)`
     text-align: justify;
     max-width: 800px;
     font-size: 1.6rem;
+
+    span{
+      color: ${(props) => props.theme['tertiary']};
+      cursor: pointer;
+    }
   }
 `
