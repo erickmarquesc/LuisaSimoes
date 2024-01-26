@@ -3,7 +3,7 @@ import { Container, Content } from "../../components/containers/styles";
 import { projects } from "../../Utils/projectsList";
 import { ContentProject } from "./styles";
 import { CTA } from "../../components/CTA";
-/* import ScrollCarousel from 'scroll-carousel-react'; */
+import ScrollCarousel from 'scroll-carousel-react';
 
 export const Projects = () => {
   const { projectId } = useParams();
@@ -27,7 +27,7 @@ export const Projects = () => {
                 <img src={project.img2} className="imgLong" />
               </div>
             </div>
-            {/* <ScrollCarousel
+            <ScrollCarousel
               autoplay
               autoplaySpeed={30}
               speed={1}
@@ -39,7 +39,7 @@ export const Projects = () => {
                   )
                 })
               }
-            </ScrollCarousel> */}
+            </ScrollCarousel>
 
           </ContentProject>
         ) : (
