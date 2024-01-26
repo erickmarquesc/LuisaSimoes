@@ -29,12 +29,12 @@ export const ContentAbout = styled(Content)`
     };
   };
 
-  @media(max-width: 700px){
+  @media(max-width: 800px){
     
     flex-direction: column;
 
     img{
-      width: 50%;
+      width: 25%;
     };
   }
 `
