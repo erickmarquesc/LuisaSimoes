@@ -1,11 +1,13 @@
 import styled from "styled-components"
-import { Content } from "../containers/styles"
+import { Container, Content } from "../containers/styles"
 import heriImg from "../../assets/imgs/heroImg.svg"
 
-export const ContentHeroSection = styled(Content)`
-  max-width: 1420px;
-  border-radius: 8px;
+export const ContainerHeroSection = styled(Container)`
+  padding: 0;
+`
 
+export const ContentHeroSection = styled(Content)`
+  max-width: 100%;
   background-size: cover; 
   background-position: center; 
   background-image: url(${heriImg});
@@ -16,3 +18,4 @@ export const ContentHeroSection = styled(Content)`
   flex-direction: column;
   justify-content: center;
 `
+
