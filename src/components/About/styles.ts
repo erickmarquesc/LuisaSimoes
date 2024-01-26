@@ -29,7 +29,7 @@ export const ContentAbout = styled(Content)`
     p{
       font-size: 2rem;
       text-align: justify;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
 
       @media(max-width: 800px){
         font-size: 1.6rem;

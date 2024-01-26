@@ -29,7 +29,7 @@ export const ContentProjectHero = styled.div`
       max-width: 550px;
       font-size: 2rem;
       text-align: justify;
-      line-height: 35px;
+      
     }
   }
 
