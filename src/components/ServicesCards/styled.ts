@@ -15,6 +15,10 @@ export const ServicesCard = styled.div`
   padding: 56px 64px;
   flex-wrap: wrap;
   border-radius: 8px;
+
+  @media(max-width: 800px){
+    padding: 26px 18px;
+  }
   
   img{
     width: 64px;
