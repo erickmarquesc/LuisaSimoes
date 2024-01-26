@@ -13,6 +13,10 @@ export const ContainerRange = styled(Content)`
 
   h1{
     max-width: 200px;
+
+    @media(max-width: 900px){
+      max-width: 100%;
+    }
   };
 
   p{
