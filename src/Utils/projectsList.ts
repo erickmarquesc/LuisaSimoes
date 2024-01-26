@@ -23,8 +23,8 @@ type ListProjects = {
 export const projects: ListProjects[] = [
   {
     id: 1,
-    name: 'Um projeto legal',
-    title: 'Integração e conceito',
+    name: 'Sala e Cozinha',
+    title: 'Projeto residencial',
     img: imgFrist,
     img2: imgSecondy,
     imgSlider: [imgSlider1, imgSlider2, imgSlider3, imgSlider4, imgSlider5, imgSlider6, imgSlider7, imgSlider8],
