@@ -29,7 +29,7 @@ export const ContentAbout = styled(Content)`
     };
   };
 
-  @media(max-width: 800px){
+  @media(max-width: 700px){
     
     flex-direction: column;
 

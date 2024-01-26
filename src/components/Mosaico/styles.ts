@@ -18,7 +18,12 @@ export const ProjectLink = styled.a<ProjectLinkProps>`
   font-size: 2.5rem;
   color: ${(props) => props.theme['white']};
   text-shadow: 2px 2px 2px black;
-  font-family: "Great Vibes", sans-serif;
+
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-family: "Sanchez", serif;
 
   &:hover{
     filter: brightness(0.5);
