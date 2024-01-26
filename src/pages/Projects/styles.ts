@@ -41,5 +41,10 @@ export const ContentProject = styled.div`
       z-index: 1;
     }
   }
+
+  .imgSlider{
+    width: 200px;
+    border-radius: 4px;
+  }
 `
 
