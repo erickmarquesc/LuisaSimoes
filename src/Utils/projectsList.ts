@@ -35,48 +35,146 @@ type ListProjects = {
   title: string;
   img: string;
   img2: string;
-  imgSlider: string[];
+  imgSlider: {
+    original: string,
+    thumbnail: string,
+  }[];
 }
 
 export const projects: ListProjects[] = [
   {
-    id: 3,
+    id: 1,
     name: 'Banheiro Mar',
     title: 'Projeto residencial',
     img: imgSliderBanheiroMar,
     img2: '',
-    imgSlider: [imgSliderBanheiroMar, imgSliderBanheiroMarII, imgSliderBanheiroMarIII],
+    imgSlider: [
+      {
+        original: imgSliderBanheiroMar,
+        thumbnail: imgSliderBanheiroMar
+      },
+      {
+        original: imgSliderBanheiroMar,
+        thumbnail: imgSliderBanheiroMar,
+      },
+      {
+        original: imgSliderBanheiroMarII,
+        thumbnail: imgSliderBanheiroMarII,
+      },
+      {
+        original: imgSliderBanheiroMarIII,
+        thumbnail: imgSliderBanheiroMarIII,
+      }
+    ],
   },
   {
-    id: 4,
+    id: 2,
     name: 'Loft',
     title: 'Projeto residencial',
     img: imgSliderLoft520,
     img2: "",
-    imgSlider: [imgSliderLoft520, imgSliderLoft520I, imgSliderLoft520II, imgSliderLoft520III, imgSliderLoft520IV, imgSliderLoft520V, imgSliderLoft520VI],
+    imgSlider: [
+      {
+        original: imgSliderLoft520,
+        thumbnail: imgSliderLoft520
+      },
+      {
+        original: imgSliderLoft520I,
+        thumbnail: imgSliderLoft520I,
+      },
+      {
+        original: imgSliderLoft520II,
+        thumbnail: imgSliderLoft520II,
+      },
+      {
+        original: imgSliderLoft520III,
+        thumbnail: imgSliderLoft520III,
+      },
+      {
+        original: imgSliderLoft520IV,
+        thumbnail: imgSliderLoft520IV,
+      },
+      {
+        original: imgSliderLoft520V,
+        thumbnail: imgSliderLoft520V,
+      },
+      {
+        original: imgSliderLoft520VI,
+        thumbnail: imgSliderLoft520VI,
+      }
+    ],
   },
   {
-    id: 5,
+    id: 3,
     name: 'Sala de Estar',
     title: 'Projeto residencial',
     img: imgSlidersalaDeEstarI,
     img2: "",
-    imgSlider: [imgSlidersalaDeEstarI, imgSlidersalaDeEstarII, imgSlidersalaDeEstarIII, imgSlidersalaDeEstarIV],
+    imgSlider: [
+      {
+        original: imgSlidersalaDeEstarI,
+        thumbnail: imgSlidersalaDeEstarI
+      },
+      {
+        original: imgSlidersalaDeEstarII,
+        thumbnail: imgSlidersalaDeEstarII,
+      },
+      {
+        original: imgSlidersalaDeEstarIII,
+        thumbnail: imgSlidersalaDeEstarIII,
+      },
+      {
+        original: imgSlidersalaDeEstarIV,
+        thumbnail: imgSlidersalaDeEstarIV,
+      }
+    ],
   },
   {
-    id: 6,
+    id: 4,
     name: 'Cozinha Moderna',
     title: 'Projeto residencial',
     img: imgSliderCozinhaModerna,
     img2: "",
-    imgSlider: [imgSliderCozinhaModerna, imgSliderCozinhaModernaI, imgSliderCozinhaModernaII, imgSliderCozinhaModernaIII],
+    imgSlider: [
+      {
+        original: imgSliderCozinhaModerna,
+        thumbnail: imgSliderCozinhaModerna
+      },
+      {
+        original: imgSliderCozinhaModernaI,
+        thumbnail: imgSliderCozinhaModernaI,
+      },
+      {
+        original: imgSliderCozinhaModernaII,
+        thumbnail: imgSliderCozinhaModernaII,
+      },
+      {
+        original: imgSliderCozinhaModernaIII,
+        thumbnail: imgSliderCozinhaModernaIII,
+      }
+    ],
   },
   {
-    id: 7,
+    id: 5,
     name: 'Comercial',
     title: 'Projeto comercial',
     img: imgSliderComecial,
     img2: "",
-    imgSlider: [imgSliderComecial, imgSliderComecialI, imgSliderComecialII],
+    imgSlider: [
+      {
+        original: imgSliderComecial,
+        thumbnail: imgSliderComecial
+      },
+      {
+        original: imgSliderComecialI,
+        thumbnail: imgSliderComecialI,
+
+
+      },
+      {
+        original: imgSliderComecialII,
+        thumbnail: imgSliderComecialII,
+      }
+    ],
   },
 ]
