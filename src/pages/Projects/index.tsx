@@ -19,12 +19,15 @@ export const Projects = () => {
               <div className="textArea">
                 <h1>{project.name}</h1>
                 <h2>{project.title}</h2>
-                <p>{project.description}</p>
                 <CTA />
               </div>
               <div className="contentImgs">
                 <img src={project.img} className="imgShort" />
-                <img src={project.img2} className="imgLong" />
+                {
+                  project.img2 && (
+                    <img src={project.img2} className="imgLong" />
+                  )
+                }
               </div>
             </div>
           </ContentProjectHero>

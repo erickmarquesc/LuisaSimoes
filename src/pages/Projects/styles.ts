@@ -43,12 +43,15 @@ export const ContentProjectHero = styled.div`
     .imgShort {
       max-width: 397px;
       max-height: 332px;
+      border-radius: 8px;
       z-index: 2;
     }
 
     .imgLong {
-      max-width: 234px;
-      max-height: 595px;
+      width: 234px;
+      height: 995px;
+      border-radius: 8px;
+
       position: absolute;
       top: 50%;
       right: 0; 
