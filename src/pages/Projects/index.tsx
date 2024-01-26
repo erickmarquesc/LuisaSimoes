@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
-import { Container, Content } from "../../components/containers/styles";
+import { Content } from "../../components/containers/styles";
 import { projects } from "../../Utils/projectsList";
-import { ContentProject } from "./styles";
+import { ContainerProject, ContentProjectHero } from "./styles";
 import { CTA } from "../../components/CTA";
 import ScrollCarousel from 'scroll-carousel-react';
 
@@ -11,10 +11,10 @@ export const Projects = () => {
   // Encontrar o projeto com base no ID
   const project = projects.find(project => project.name === projectId);
   return (
-    <Container>
+    <ContainerProject>
       <Content>
         {project ? (
-          <ContentProject>
+          <ContentProjectHero>
             <div className="heroSectionProject">
               <div className="textArea">
                 <h1>{project.name}</h1>
@@ -27,25 +27,28 @@ export const Projects = () => {
                 <img src={project.img2} className="imgLong" />
               </div>
             </div>
-            <ScrollCarousel
-              autoplay
-              autoplaySpeed={30}
-              speed={1}
-            >
-              {
-                project.imgSlider.map((img, index) => {
-                  return (
-                    <img src={img} key={index} className="imgSlider" />
-                  )
-                })
-              }
-            </ScrollCarousel>
-
-          </ContentProject>
+          </ContentProjectHero>
         ) : (
           <p>Projeto não encontrado.</p>
         )}
       </Content>
-    </Container>
+
+      {project &&(
+          <ScrollCarousel
+            className="carousel"
+            autoplay
+            autoplaySpeed={30}
+            speed={1}
+          >
+            {
+              project.imgSlider.map((img, index) => {
+                return (
+                  <img src={img} key={index} className="imgSlider" />
+                )
+              })
+            }
+          </ScrollCarousel>
+      )}
+    </ContainerProject>
   );
 };

@@ -1,10 +1,19 @@
 import styled from "styled-components";
+import { Container,  } from "../../components/containers/styles";
 
-export const ContentProject = styled.div`
+export const ContainerProject = styled(Container)`
+  .imgSlider{
+    width: 200px;
+    border-radius: 4px;
+  }
+`
+
+export const ContentProjectHero = styled.div`
   width: 100%;
 
   .heroSectionProject{
     display: flex;
+    flex-wrap: wrap-reverse;
     align-items: center;
     justify-content: space-between;
   }
@@ -46,11 +55,6 @@ export const ContentProject = styled.div`
       transform: translateY(-50%); /* Ajusta a posição vertical da .imgLong para o centro */
       z-index: 1;
     }
-  }
-
-  .imgSlider{
-    width: 200px;
-    border-radius: 4px;
   }
 `
 
