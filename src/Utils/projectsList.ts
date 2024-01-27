@@ -29,12 +29,19 @@ import imgSliderComecial from "../assets/imgs/projectsimg/Comercial/comecial.svg
 import imgSliderComecialI from "../assets/imgs/projectsimg/Comercial/comecialI.svg"
 import imgSliderComecialII from "../assets/imgs/projectsimg/Comercial/comecialII.svg"
 
+/* IMG SALA D/M */
+import imgSliderSalaDM from "../assets/imgs/projectsimg/SalaDM/salaDM.svg"
+import imgSliderSalaDMI from "../assets/imgs/projectsimg/SalaDM/salaDMI.svg"
+import imgSliderSalaDMII from "../assets/imgs/projectsimg/SalaDM/salaDMII.svg"
+import imgSliderSalaDMIII from "../assets/imgs/projectsimg/SalaDM/salaDMIII.svg"
+
 type ListProjects = {
   id: number;
   name: string;
   title: string;
   img: string;
-  img2: string;
+  size: 'smal' | 'large';
+
   imgSlider: {
     original: string,
     thumbnail: string,
@@ -47,7 +54,7 @@ export const projects: ListProjects[] = [
     name: 'Banheiro Mar',
     title: 'Projeto residencial',
     img: imgSliderBanheiroMar,
-    img2: '',
+    size: 'large',
     imgSlider: [
       {
         original: imgSliderBanheiroMar,
@@ -72,7 +79,7 @@ export const projects: ListProjects[] = [
     name: 'Loft',
     title: 'Projeto residencial',
     img: imgSliderLoft520,
-    img2: "",
+    size: 'smal',
     imgSlider: [
       {
         original: imgSliderLoft520,
@@ -109,7 +116,7 @@ export const projects: ListProjects[] = [
     name: 'Sala de Estar',
     title: 'Projeto residencial',
     img: imgSlidersalaDeEstarI,
-    img2: "",
+    size: 'smal',
     imgSlider: [
       {
         original: imgSlidersalaDeEstarI,
@@ -134,7 +141,7 @@ export const projects: ListProjects[] = [
     name: 'Cozinha Moderna',
     title: 'Projeto residencial',
     img: imgSliderCozinhaModerna,
-    img2: "",
+    size: 'smal',
     imgSlider: [
       {
         original: imgSliderCozinhaModerna,
@@ -159,7 +166,7 @@ export const projects: ListProjects[] = [
     name: 'Comercial',
     title: 'Projeto comercial',
     img: imgSliderComecial,
-    img2: "",
+    size: 'large',
     imgSlider: [
       {
         original: imgSliderComecial,
@@ -175,6 +182,31 @@ export const projects: ListProjects[] = [
         original: imgSliderComecialII,
         thumbnail: imgSliderComecialII,
       }
+    ],
+  },
+  {
+    id: 6,
+    name: 'Sala DM',
+    title: 'Projeto residencial',
+    img: imgSliderSalaDM,
+    size: 'smal',
+    imgSlider: [
+      {
+        original: imgSliderSalaDM,
+        thumbnail: imgSliderSalaDM,
+      },
+      {
+        original: imgSliderSalaDMI,
+        thumbnail: imgSliderSalaDMI,
+      },
+      {
+        original: imgSliderSalaDMII,
+        thumbnail: imgSliderSalaDMII,
+      },
+      {
+        original: imgSliderSalaDMIII,
+        thumbnail: imgSliderSalaDMIII,
+      },
     ],
   },
 ]
