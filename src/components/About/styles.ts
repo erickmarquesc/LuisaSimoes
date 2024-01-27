@@ -14,15 +14,7 @@ export const ContentAbout = styled(Content)`
   };
 
   div{
-    @media (prefers-color-scheme: dark) {
-      h1{
-        color: ${(props) => props.theme['white']};
-
-      };
-      p{
-        color: ${(props) => props.theme['white']};
-      }
-    };
+    
     
     strong{
       font-size: 2.4rem;

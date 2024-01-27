@@ -11,15 +11,7 @@ export const ContainerRange = styled(Content)`
     justify-content: center;
   }
 
-  @media (prefers-color-scheme: dark) {
-    h1{
-      color: ${(props) => props.theme['white']};
-
-    };
-    p{
-      color: ${(props) => props.theme['white']};
-    }
-  };
+  
 
   h1{
     max-width: 200px;
