@@ -24,10 +24,10 @@ export const ContentFooter = styled(Content)`
       gap: 12px;
       all: inherit;
       display: flex;
+      cursor: pointer;
       font-size: 1.6rem;
       align-items: center;
       flex-direction: row;
-      cursor: pointer;
 
       transition: 1s ease-in-out;
       
@@ -53,15 +53,16 @@ export const ContentFooter = styled(Content)`
     display: flex;
     font-size: 1.2rem;
     align-items: center;
+    text-align: center;
     flex-direction: column;
 
     strong{
-      display: flex;
       gap: 4px;
+      display: flex;
 
       a{
         text-decoration: underline;
-      }
-    }
+      };
+    };
   };
 `
