@@ -4,6 +4,10 @@ import styled from "styled-components"
 export const ContainerFooter = styled(Container)`
   color: ${(props) => props.theme['white']};
   background-color: ${(props) => props.theme['secondary']};
+
+  @media (prefers-color-scheme: dark) {
+    background-color: ${(props) => props.theme['tertiary']};
+  };
 `
 export const ContentFooter = styled(Content)`
   gap: 48px;
@@ -34,6 +38,10 @@ export const ContentFooter = styled(Content)`
       :hover{
         color: ${(props) => props.theme['tertiary']};
         filter: brightness(0.9);
+
+        @media (prefers-color-scheme: dark) {
+          color: ${(props) => props.theme['secondary']};
+        };
       };
     };
   };

@@ -6,8 +6,6 @@ import { CTA } from "../../components/CTA";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css"
 
-/* import ScrollCarousel from 'scroll-carousel-react'; */
-
 export const Projects = () => {
   const { projectId } = useParams();
 
@@ -36,23 +34,6 @@ export const Projects = () => {
           <p>Projeto não encontrado.</p>
         )}
       </Content>
-
-      {/* {project &&(
-          <ScrollCarousel
-            className="carousel"
-            autoplay
-            autoplaySpeed={30}
-            speed={1}
-          >
-            {
-              project.imgSlider.map((img, index) => {
-                return (
-                  <img src={img} key={index} className="imgSlider" />
-                )
-              })
-            }
-          </ScrollCarousel>
-      )} */}
     </ContainerProject>
   );
 };
