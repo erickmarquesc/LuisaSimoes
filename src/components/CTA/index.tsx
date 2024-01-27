@@ -3,7 +3,7 @@ import { CTAButton } from "./styled"
 
 export const CTA = () => {
   const whatisappNumber = 5521995712126
-  const mensage = 'Olá Luisa, me encantei com seu trabalho! Podemos marcar uma conversa?'
+  const mensage = 'Olá Luísa, vim pelo seu site e gostaria de solicitar um orçamento com você.'
 
   return (
     <Container>
