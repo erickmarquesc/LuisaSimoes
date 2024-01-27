@@ -163,29 +163,6 @@ export const projects: ListProjects[] = [
   },
   {
     id: 5,
-    name: 'Comercial',
-    title: 'Projeto comercial',
-    img: imgSliderComecial,
-    size: 'large',
-    imgSlider: [
-      {
-        original: imgSliderComecial,
-        thumbnail: imgSliderComecial
-      },
-      {
-        original: imgSliderComecialI,
-        thumbnail: imgSliderComecialI,
-
-
-      },
-      {
-        original: imgSliderComecialII,
-        thumbnail: imgSliderComecialII,
-      }
-    ],
-  },
-  {
-    id: 6,
     name: 'Sala DM',
     title: 'Projeto residencial',
     img: imgSliderSalaDM,
@@ -207,6 +184,29 @@ export const projects: ListProjects[] = [
         original: imgSliderSalaDMIII,
         thumbnail: imgSliderSalaDMIII,
       },
+    ],
+  },
+  {
+    id: 6,
+    name: 'Comercial',
+    title: 'Projeto comercial',
+    img: imgSliderComecial,
+    size: 'large',
+    imgSlider: [
+      {
+        original: imgSliderComecial,
+        thumbnail: imgSliderComecial
+      },
+      {
+        original: imgSliderComecialI,
+        thumbnail: imgSliderComecialI,
+
+
+      },
+      {
+        original: imgSliderComecialII,
+        thumbnail: imgSliderComecialII,
+      }
     ],
   },
 ]

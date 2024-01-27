@@ -18,6 +18,10 @@ export const ProjectLink = styled.a<ProjectLinkProps>`
 
   width: ${(props) => (props.size === 'large' ? '50%' : '25%')};
 
+  @media(max-width: 800px){
+    width: 100%;
+  };
+
   height: 200px;
 
   display: flex;
