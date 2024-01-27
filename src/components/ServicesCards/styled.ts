@@ -32,16 +32,6 @@ export const ServicesCard = styled.div`
     flex-direction: column;
     border-left: solid 2px ${(props) => props.theme['tertiary']};
 
-    @media (prefers-color-scheme: dark) {
-      h1{
-        color: ${(props) => props.theme['white']};
-
-      };
-      p{
-        color: ${(props) => props.theme['white']};
-      }
-    };
-
     h1{
       font-size: 1.8rem;
       font-family: "Sanchez", serif;

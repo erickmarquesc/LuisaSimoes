@@ -23,12 +23,6 @@ export const ContentProjectHero = styled.div`
       font-family: "Sanchez", serif;
       color: ${(props) => props.theme['tertiary']};
     }
-    
-    @media (prefers-color-scheme: dark) {
-      h2{
-        color: ${(props) => props.theme['white']};
-      }
-    };
   }
 
   .contentImgs{
