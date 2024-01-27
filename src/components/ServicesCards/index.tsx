@@ -27,20 +27,20 @@ export const Services = () => {
     {
       icon: iconArqui,
       title: 'Projeto Arquitetônico ',
-      predescription: `A principal função do arquiteto é criar o projeto arquitetônico, no qual...`,
-      description: `A principal função do arquiteto é criar o projeto arquitetônico, no qual estão previstas todas as mudanças e soluções de acordo com o espaço e as necessidades do cliente.`
+      predescription: `Projeto que norteia toda a construção que precisa iniciar do...`,
+      description: `Projeto que norteia toda a construção que precisa iniciar do zero! Com plantas de fundação, estrutural, implantação, localização, planta baixa, planta de elétrica, iluminação, hidráulica, etc. Se você tem um terreno e quer construir do início, tudo personalizado, pensado em todos os detalhes. Esse tipo de projeto é para você! Fazemos atendimentos presenciais para o Rio de Janeiro e on-line para todo o Brasil.`
     },
     {
       icon: iconInter,
       title: 'Projetos de interiores',
-      predescription: `O designer de interiores planeja e projeta os mais diferentes espaços...`,
-      description: `O designer de interiores planeja e projeta os mais diferentes espaços internos residenciais, comerciais e institucionais, distribuindo os elementos pensando na estética, no conforto, na saúde e segurança dos usuários e na funcionalidade do local. Esses elementos incluem peças de mobília, objetos decorativos e até cores das paredes e revestimento do piso.`
+      predescription: `É ideal para você que precisa fazer uma reforma em alguns cômodo do seu imóvel, porém...`,
+      description: `É ideal para você que precisa fazer uma reforma em alguns cômodos do seu imóvel, porém sem mexer na parte estrutural. O projeto de interiores tem a finalidade de planejar e projeta os mais diferentes espaços internos, residenciais e comerciais, distribuindo os elementos pensando na estética, no conforto, na saúde e segurança dos usuários e na funcionalidade do imóvel. Fazemos atendimentos presenciais para o Rio de Janeiro e on-line para todo o Brasil.`
     },
     {
       icon: iconExpress,
       title: 'Consultoria Express',
-      predescription: `A consultoria de decoração é um serviço muito realizado pelos designers...`,
-      description: `A consultoria de decoração é um serviço muito realizado pelos designers de interiores, que tem como objetivo auxiliar o cliente em relação aos itens de decoração, como a disposição dos móveis, o estilo, as cores, a iluminação ou qualquer outra mudança para otimizar  e decorar o espaço.`
+      predescription: `A consultoria Express é ideal para você que não quer fazer uma grande mudança mas sabe que...`,
+      description: `A consultoria Express é ideal para você que não quer fazer uma grande mudança, mas sabe que precisa de uma transformação em algum cômodo específico, seja uma mudança de pintura, cortinas, novos móveis, itens decorativos ou indicações de loja. Fazemos atendimentos presenciais para o Rio de Janeiro e on-line para todo o Brasil.`
     }
   ]
 

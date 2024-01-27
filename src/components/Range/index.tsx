@@ -15,7 +15,7 @@ export const Ranger = () => {
         <h1>Como um projeto pode te ajudar</h1>
         <p>
           {expanded
-            ? 'Contratar um arquiteto é abrir as portas para a transformação e a realização de sonhos. É como ter um guia em uma jornada para criar espaços únicos, funcionais e cheios de significado. É investir em qualidade de vida, valorização do patrimônio e bem-estar. Cada cantinho da sua construção ou reforma será planejado, com cronogramas, responsabilidade, expertise e paixão. Unimos beleza e funcionalidade e este é um encanto que só a arquitetura pode oferecer.'
+            ? 'Contratar um arquiteto é abrir as portas para a transformação e a realização de sonhos. É como ter um guia em uma jornada para criar espaços únicos, funcionais e cheios de significado. É investir em qualidade de vida, valorização do patrimônio e bem-estar. Cada cantinho da sua construção ou reforma será planejado, com cronogramas, responsabilidade, competência e paixão. Unimos beleza e funcionalidade e este é um encanto que só a arquitetura pode oferecer.'
             : 'Contratar um arquiteto é abrir as portas para a transformação e a realização de sonhos. É como ter um guia em uma jornada para criar espaços únicos, funcionais e cheios de ... '}
           <br/>
           <span onClick={toggleText}>
