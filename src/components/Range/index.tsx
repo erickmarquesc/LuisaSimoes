@@ -1,6 +1,7 @@
-import { useState } from 'react';
-import { Container } from '../containers/styles';
-import { ContainerRange } from './styles';
+import { useState } from 'react'
+
+import { Container } from '../containers/styles'
+import { ContainerRange } from './styles'
 
 export const Ranger = () => {
   const [expanded, setExpanded] = useState(false);

@@ -2,50 +2,49 @@ import styled from "styled-components";
 import { Content } from "../containers/styles";
 
 export const ContentServices = styled(Content)`
-  justify-content: center;
-  flex-direction: column;
   gap: 12px;
+  flex-direction: column;
+  justify-content: center;
 `
 
 export const ServicesCard = styled.div`
-  display: flex;
-  align-items: center;
-  border: solid 2px ${(props) => props.theme['tertiary']};
   gap: 40px;
-  padding: 56px 64px;
+  display: flex;
   flex-wrap: wrap;
   border-radius: 8px;
+  padding: 56px 64px;
+  align-items: center;
+  border: solid 2px ${(props) => props.theme['tertiary']};
 
   @media(max-width: 800px){
     padding: 26px 18px;
-  }
+  };
   
   img{
     width: 64px;
   };
 
   div{
-    border-left: solid 2px ${(props) => props.theme['tertiary']};
-    padding-left: 12px;
     gap: 12px;
     display: flex;
+    padding-left: 12px;
     flex-direction: column;
+    border-left: solid 2px ${(props) => props.theme['tertiary']};
 
     h1{
-      font-family: "Sanchez", serif;
       font-size: 1.8rem;
-    }
+      font-family: "Sanchez", serif;
+    };
 
     p{
-      text-align: justify;
-      font-size: 1.6rem;
       max-width: 800px;
+      font-size: 1.6rem;
+      text-align: justify;
 
       span{
         color: ${(props) => props.theme['tertiary']};
         cursor: pointer;
-      }
-    }
-  }
-
+      };
+    };
+  };
 `

@@ -1,7 +1,8 @@
-import { Logo } from "../Logo"
 import { ContainerHeroSection, ContentHeroSection } from "./styles"
-import imgLogo from "../../assets/logo/logo-preta.svg"
+import { Logo } from "../Logo"
 import { CTA } from "../CTA"
+
+import imgLogo from "../../assets/logo/logo-preta.svg"
 
 export const HeroSection = () => {
   return (

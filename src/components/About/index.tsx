@@ -1,12 +1,16 @@
 import { Container } from "../containers/styles"
-import imgAbout from "../../assets/imgs/about.svg"
 import { ContentAbout } from "./styles"
+
+import imgAbout from "../../assets/imgs/about.svg"
 
 export const About = () => {
   return (
     <Container>
       <ContentAbout id="about">
-        <img src={imgAbout} alt="Arquiteta Luisa, sorridente, sentada à mesa branca com cabelos longos caindo sobre o ombro. Na mesa, materiais de arquitetura, projetos e paletas de cores de parede." />
+        <img
+          src={imgAbout}
+          alt="Arquiteta Luisa, sorridente, sentada à mesa branca com cabelos longos caindo sobre o ombro. Na mesa, materiais de arquitetura, projetos e paletas de cores de parede."
+        />
         <div>
           <strong>
             Conheça

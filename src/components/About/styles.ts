@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Content } from "../containers/styles";
+import styled from "styled-components"
+import { Content } from "../containers/styles"
 
 export const ContentAbout = styled(Content)`
   gap: 32px;
@@ -10,14 +10,14 @@ export const ContentAbout = styled(Content)`
 
     @media(max-width: 800px){
       width: 25%;
-    }
+    };
   };
 
   div{
     strong{
       font-size: 2.4rem;
-      color: ${(props) => props.theme['tertiary']};
       font-family: "Sanchez", serif;
+      color: ${(props) => props.theme['tertiary']};
     };
 
     h1{
@@ -28,17 +28,16 @@ export const ContentAbout = styled(Content)`
 
     p{
       font-size: 2rem;
-      text-align: justify;
       margin-bottom: 8px;
+      text-align: justify;
 
       @media(max-width: 800px){
         font-size: 1.6rem;
-      }
+      };
     };
   };
 
   @media(max-width: 500px){
-    
     flex-direction: column;
   }
 `

@@ -1,8 +1,8 @@
 import { SiGmail, SiWhatsapp, SiInstagram } from "react-icons/si"
 import { ContainerFooter, ContentFooter } from "./styles"
-import { Logo } from "../Logo"
-import { useState } from "react"
 import { Link } from "react-router-dom"
+import { useState } from "react"
+import { Logo } from "../Logo"
 
 export const Footer = () => {
   const whatisappNumber = 5521995712126

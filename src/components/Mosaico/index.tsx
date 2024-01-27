@@ -1,5 +1,5 @@
-import { projects } from "../../Utils/projectsList"
 import { ContainerMosaico, ProjectLink } from "./styles"
+import { projects } from "../../Utils/projectsList"
 
 export const Mosaico = () => {
   return (

@@ -8,7 +8,10 @@ interface ILogoProps{
 export const Logo = ({ logoImg = logoImgDefault }: ILogoProps) => {
   return (
     <ContentLogo>
-      <img src={logoImg} alt="Logo da arquiteta Luisa Simões, representada pelas letras L e S. A letra L forma a parede de uma casa com telhado e chaminé, enquanto a letra S completa o desenho, criando a porta da casa. Uma representação única e elegante do trabalho arquitetônico de Luisa Simões."/>
+      <img
+        src={logoImg}
+        alt="Logo da arquiteta Luisa Simões, representada pelas letras L e S. A letra L forma a parede de uma casa com telhado e chaminé, enquanto a letra S completa o desenho, criando a porta da casa. Uma representação única e elegante do trabalho arquitetônico de Luisa Simões."
+      />
       <h1>
         Luisa Simões
       </h1>
