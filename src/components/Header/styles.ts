@@ -12,9 +12,10 @@ export const HeaderContent = styled(Content)`
 
   .linkLogo{
     all: initial;
-    cursor: pointer;
+
     width: auto;
-  }
+    cursor: pointer;
+  };
 
   a{
     all: inherit;
@@ -27,6 +28,7 @@ export const HeaderContent = styled(Content)`
 
     li{
       all: inherit;
+      
       transition: 1s ease-in-out;
       border-bottom: solid 2px transparent;
 
