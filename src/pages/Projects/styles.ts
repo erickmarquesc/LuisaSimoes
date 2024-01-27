@@ -24,13 +24,11 @@ export const ContentProjectHero = styled.div`
       color: ${(props) => props.theme['tertiary']};
     }
     
-    p{
-      margin-top: 16px;
-      max-width: 550px;
-      font-size: 2rem;
-      text-align: justify;
-      
-    }
+    @media (prefers-color-scheme: dark) {
+      h2{
+        color: ${(props) => props.theme['white']};
+      }
+    };
   }
 
   .contentImgs{

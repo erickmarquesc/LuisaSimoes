@@ -11,6 +11,12 @@ export const GlobalStyle = createGlobalStyle`
     background: #FAFAFA;
   };
 
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #2C2C2C;
+    }
+  }
+
   html  {
     font-weight: 400;
     font-size: 10px;
@@ -19,3 +25,8 @@ export const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
   };
 `
+/* Fundo escuro: #1A1A1A
+Texto claro: #FFFFFF
+Texto cinza escuro: #868686
+Links ou destaques: #007AFF(azul típico da Apple)
+Sombra ou contorno: #2C2C2C */
