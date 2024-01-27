@@ -2,13 +2,13 @@ import styled from "styled-components";
 import { Content } from "../containers/styles";
 
 export const ContainerRange = styled(Content)`
-  align-items: center;
-  flex-wrap: wrap;
   gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
 
   @media(max-width: 900px){
-    justify-content: center;
     text-align: center;
+    justify-content: center;
   }
 
   h1{
@@ -16,19 +16,19 @@ export const ContainerRange = styled(Content)`
 
     @media(max-width: 900px){
       max-width: 100%;
-    }
+    };
   };
 
   p{
-    border-left: solid 2px ${(props) => props.theme['secondary']};
-    padding-left: 12px;
-    text-align: justify;
     max-width: 800px;
     font-size: 1.6rem;
+    padding-left: 12px;
+    text-align: justify;
+    border-left: solid 2px ${(props) => props.theme['secondary']};
 
     span{
       color: ${(props) => props.theme['tertiary']};
       cursor: pointer;
-    }
-  }
+    };
+  };
 `
