@@ -2,6 +2,7 @@ import { SiGmail, SiWhatsapp, SiInstagram } from "react-icons/si"
 import { ContainerFooter, ContentFooter } from "./styles"
 import { Logo } from "../Logo"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 export const Footer = () => {
   const whatisappNumber = 5521995712126
@@ -23,22 +24,28 @@ export const Footer = () => {
           <Logo />
           <ul>
             <li>
-              <a href={`https://wa.me/${whatisappNumber}?text=${mensage}`} target="_blank">
+              <Link
+                to={`https://wa.me/${whatisappNumber}?text=${mensage}`}
+                target="_blank"
+              >
                 <SiWhatsapp size={20} />
                 (021) 9-9571-2126
-              </a>
+              </Link>
             </li>
             <li onClick={handleCopyClick}>
-              <a>
+              <Link to=''>
                 <SiGmail size={20} />
                 {copied ? 'Email copiado!' : email}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://www.instagram.com/luisasimoesarquitetura/" target="_blank">
+              <Link
+                to="https://www.instagram.com/luisasimoesarquitetura/"
+                target="_blank"
+              >
                 <SiInstagram size={20} />
                 @luisasimoesarquitetura
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -48,7 +55,7 @@ export const Footer = () => {
             Todos os direitos reservados - Luisa Simões Arquitetura e interiores
           </strong>
           <strong>
-            Desenvolvido por <a href="https://erickmarques.vercel.app/" target="_blank">Erick Marques</a>
+            Desenvolvido por <Link to="https://erickmarques.vercel.app/" target="_blank">Erick Marques</Link>
           </strong>
         </div>
       </ContentFooter>

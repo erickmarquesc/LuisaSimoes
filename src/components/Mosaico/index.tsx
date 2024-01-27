@@ -3,7 +3,7 @@ import { ContainerMosaico, ProjectLink } from "./styles"
 
 export const Mosaico = () => {
   return (
-    <ContainerMosaico>
+    <ContainerMosaico id="projects">
       {
         projects.map((project, index) => {
           return (
