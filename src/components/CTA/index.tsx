@@ -8,7 +8,10 @@ export const CTA = () => {
   return (
     <Container>
       <Content>
-        <CTAButton href={`https://wa.me/${whatisappNumber}?text=${mensage}`} target="_blank">
+        <CTAButton
+          href={`https://wa.me/${whatisappNumber}?text=${mensage}`}
+          target="_blank"
+        >
           Solicitar orçamento
         </CTAButton>
       </Content>
