@@ -1,10 +1,11 @@
+import { useState } from "react"
+
 import { ContentServices, ServicesCard } from "./styled"
 import { Container } from "../containers/styles"
 
 import iconArqui from "../../assets/icons/iconArqui.svg"
 import iconInter from "../../assets/icons/iconInter.svg"
 import iconExpress from "../../assets/icons/iconExpress.svg"
-import { useState } from "react"
 
 interface IServicesItemProps {
   icon: string,
