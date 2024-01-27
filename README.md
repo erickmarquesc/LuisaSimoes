@@ -9,7 +9,6 @@ Esse projeto exclusivo, promovido pela ECOM para WEB. <br/>
 <p align="center">
   <a href="#-descrição">Descrição do Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a> 
 </p>
 
 <p align="center">
