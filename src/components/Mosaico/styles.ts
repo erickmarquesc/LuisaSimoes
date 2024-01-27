@@ -7,11 +7,10 @@ interface ProjectLinkProps {
 }
 
 export const ContainerMosaico = styled(Container)`
-  flex-wrap: wrap;
-  display: flex;
-  flex-direction: row;
   padding: 0;
-  background-color:red ;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 `
 
 export const ProjectLink = styled.a<ProjectLinkProps>`
@@ -30,21 +29,20 @@ export const ProjectLink = styled.a<ProjectLinkProps>`
 
   cursor: pointer;
   
-  color: ${(props) => props.theme['black']};
-  /* text-shadow: 2px 2px 2px black; */
-  font-size: 1.4rem;
   font-weight: 400;
+  font-size: 1.4rem;
   font-style: normal;
   text-transform: uppercase;
   font-family: "Sanchez", serif;
+  color: ${(props) => props.theme['black']};
 
   h1{
-    background-color: ${(props) => props.theme['white']};
     padding: 12px 24px;
     border-radius: 2px;
-  }
+    background-color: ${(props) => props.theme['white']};
+  };
 
   &:hover{
     filter: brightness(0.5);
-  }
+  };
 `;
