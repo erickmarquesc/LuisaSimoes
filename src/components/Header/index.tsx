@@ -26,12 +26,12 @@ export const Header = () => {
           <Link className="iconLink"
             to={`https://wa.me/${whatisappNumber}?text=${mensage}`}
             target="_blank">
-            <SiInstagram size={20} />
+            <SiWhatsapp size={20} />
           </Link>
           <Link className="iconLink"
             to="https://www.instagram.com/luisasimoesarquitetura/"
             target="_blank">
-            <SiWhatsapp size={20} />
+            <SiInstagram size={20} />
           </Link>
         </ContentMidiaLink>
       </HeaderContent>
