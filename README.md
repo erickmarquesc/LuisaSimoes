@@ -1,30 +1,53 @@
-# React + TypeScript + Vite
+<h1 align="center">CoffeeDelivery</h1>
+<p align="center">
+Erick Marques Cabral
+</p>
+<p align="center">
+Esse projeto exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
+<a href="https://www.rocketseat.com.br/">Rocketseat🔗</a>.
+</p> <br/>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <a href="#-descrição">Descrição do Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a> 
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  <img alt="projeto DevLinks" src=".github/preview.svg" width="100%">
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💻 Descrição
+Nesse projeto, desenvolvi uma aplicação com Vite no interesse de aprender sobre a tecnologia. Apesar de serem poucas funcionalidades a aplicação é para gerenciar um carrinho de compras de uma cafeteria fictícia, que contém as seguintes funcionalidades:
 
-## Expanding the ESLint configuration
+- Listagem de produtos (cafés) disponíveis para compra
+- Adicionar uma quantidade específicas de itens no carrinho
+- Aumentar ou remover a quantidade de itens no carrinho
+- Formulário para o usuário preencher o seu endereço
+- Exibir o total de itens no carrinho no Header
+- Exibir o valor total da soma de itens no carrinho multiplicados pelo valor
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Apesar de serem poucas funcionalidades, precisei abordar conceitos como:
 
-- Configure the top-level `parserOptions` property like this:
+- Estados
+- ContextAPI
+- LocalStorage
+- Imutabilidade do estado
+- Listas e chaves no ReactJS
+- Propriedades
+- Componentização
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## 🚀 Tecnologias
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- HTML e CSS
+- JavaScript
+- Git e Github
+- Figma
+- Vite
+- TypeScript
+- ReactJS
+    
+## 🔖 Layout
+
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/wGsjJE5mSRMmC2SF24Fyno/Coffee-Delivery?node-id=0%3A1&t=x4zU1Ph4djBqhXBy-1). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
