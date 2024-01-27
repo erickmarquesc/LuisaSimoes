@@ -10,6 +10,12 @@ export const HeaderContent = styled(Content)`
     width: 48px;
   };
 
+  .linkLogo{
+    all: initial;
+    cursor: pointer;
+    width: auto;
+  }
+
   a{
     all: inherit;
   };

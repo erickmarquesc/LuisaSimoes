@@ -16,5 +16,6 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 10px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
+    scroll-behavior: smooth;
   };
 `
