@@ -33,17 +33,14 @@ export const ProjectLink = styled.a<ProjectLinkProps>`
 
   cursor: pointer;
   
-  font-weight: 400;
   font-size: 1.4rem;
-  font-style: normal;
   text-transform: uppercase;
-  font-family: "Sanchez", serif;
-  color: ${(props) => props.theme['black']};
+  color: ${(props) => props.theme['white']};
 
   h1{
     padding: 12px 24px;
     border-radius: 2px;
-    background-color: ${(props) => props.theme['white']};
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   };
 
   &:hover{

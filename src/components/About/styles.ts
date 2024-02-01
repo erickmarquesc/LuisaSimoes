@@ -11,10 +11,13 @@ export const ContentAbout = styled(Content)`
     @media(max-width: 800px){
       width: 25%;
     };
+
+    @media(max-width: 500px){
+      width: 80%;
+    };
   };
 
   div{
-    
     
     strong{
       font-size: 2.4rem;
