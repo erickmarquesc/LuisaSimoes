@@ -34,7 +34,6 @@ export const ServicesCard = styled.div`
 
     h1{
       font-size: 1.8rem;
-      font-family: "Sanchez", serif;
     };
 
     p{
