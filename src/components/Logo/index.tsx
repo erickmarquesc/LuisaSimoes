@@ -1,5 +1,5 @@
-import logoImgDefault from "../../assets/logo/logo-branca.svg"
-import { ContentLogo } from "./styles"
+import logoImgDefault from '@/assets/logo/logo-branca.svg'
+import { ContentLogo } from './styles'
 
 interface ILogoProps{
   logoImg?: string;

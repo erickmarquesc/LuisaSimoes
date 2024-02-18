@@ -1,12 +1,13 @@
-import { ContentMidiaLink, HeaderContent } from "./styles"
-import { SiWhatsapp, SiInstagram } from "react-icons/si"
-import logo from "../../assets/logo/logo-preta.svg"
-import { Container } from "../containers/styles"
-import { Link } from "react-router-dom"
+import { SiWhatsapp, SiInstagram } from 'react-icons/si'
+import { Link } from 'react-router-dom'
+
+import { Container } from '@/components/containers/styles'
+import { ContentMidiaLink, HeaderContent } from './styles'
+import logo from '@/assets/logo/logo-preta.svg'
 
 export const Header = () => {
-  const whatisappNumber = 5521995712126;
-  const mensage = 'Olá Luísa, vim pelo seu site e gostaria de solicitar um orçamento com você.';
+  const whatisappNumber = 5521995712126
+  const mensage = 'Olá Luísa, vim pelo seu site e gostaria de solicitar um orçamento com você.'
 
   return (
     <Container>

@@ -1,8 +1,12 @@
-import { SiGmail, SiWhatsapp, SiInstagram } from "react-icons/si"
-import { ContainerFooter, ContentFooter } from "./styles"
-import { Link } from "react-router-dom"
-import { useState } from "react"
-import { Logo } from "../Logo"
+import { SiGmail, SiWhatsapp, SiInstagram } from 'react-icons/si'
+import { Link } from 'react-router-dom'
+import { useState } from 'react'
+
+import { Logo } from '../Logo'
+import {
+  ContainerFooter,
+  ContentFooter
+} from './styles'
 
 export const Footer = () => {
   const whatisappNumber = 5521995712126
@@ -12,9 +16,9 @@ export const Footer = () => {
   const [copied, setCopied] = useState(false)
 
   const handleCopyClick = () => {
-    navigator.clipboard.writeText(email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000); // Define um tempo para redefinir o estado para false após 2 segundos
+    navigator.clipboard.writeText(email)
+    setCopied(true)
+    setTimeout(() => setCopied(false), 2000) // Define um tempo para redefinir o estado para false após 2 segundos
   }
 
   return (
