@@ -1,7 +1,7 @@
-import { Container } from "../containers/styles"
-import { ContentAbout } from "./styles"
+import { Container } from '@/components/containers/styles'
+import { ContentAbout } from './styles'
 
-import imgAbout from "../../assets/imgs/about.svg"
+import imgAbout from '@/assets/imgs/about.svg'
 
 export const About = () => {
   return (

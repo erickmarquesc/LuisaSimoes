@@ -1,14 +1,14 @@
 import { useState } from 'react'
 
-import { Container } from '../containers/styles'
+import { Container } from '@/components/containers/styles'
 import { ContainerRange } from './styles'
 
 export const Ranger = () => {
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(false)
 
   const toggleText = () => {
-    setExpanded(!expanded);
-  };
+    setExpanded(!expanded)
+  }
 
   return (
     <Container>
@@ -25,5 +25,5 @@ export const Ranger = () => {
         </p>
       </ContainerRange>
     </Container>
-  );
-};
+  )
+}

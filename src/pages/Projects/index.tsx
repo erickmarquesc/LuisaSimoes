@@ -1,18 +1,24 @@
-import { useParams } from "react-router-dom";
-import { Content } from "../../components/containers/styles";
-import { projects } from "../../Utils/projectsList";
-import { ContainerProject, ContentProjectHero } from "./styles";
-import { CTA } from "../../components/CTA";
-import ImageGallery from "react-image-gallery";
-import "react-image-gallery/styles/css/image-gallery.css"
+import { useParams } from 'react-router-dom'
+
+import 'react-image-gallery/styles/css/image-gallery.css'
+import ImageGallery from 'react-image-gallery'
+import { Helmet } from 'react-helmet-async'
+
+import { ContainerProject, ContentProjectHero } from './styles'
+import { Content } from '@/components/containers/styles'
+import { projects } from '@/Utils/projectsList'
+import { CTA } from '@/components/CTA'
 
 export const Projects = () => {
-  const { projectId } = useParams();
+  const { projectId } = useParams()
 
   // Encontrar o projeto com base no ID
-  const project = projects.find(project => project.name === projectId);
+  const project = projects.find(project => project.name === projectId)
+  
   return (
     <ContainerProject>
+      <Helmet title={`Projeto ${project?.name}`} />
+
       <Content>
         {project ? (
           <ContentProjectHero>
@@ -35,5 +41,5 @@ export const Projects = () => {
         )}
       </Content>
     </ContainerProject>
-  );
-};
+  )
+}

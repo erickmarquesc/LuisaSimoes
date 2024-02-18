@@ -1,5 +1,5 @@
-import { Container, Content } from "../containers/styles"
-import { CTAButton } from "./styled"
+import { Container, Content } from '@/components/containers/styles'
+import { CTAButton } from './styled'
 
 export const CTA = () => {
   const whatisappNumber = 5521995712126
