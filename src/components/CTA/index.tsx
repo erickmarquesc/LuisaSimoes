@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { Container, Content } from '@/components/containers/styles'
 import { CTAButton } from './styled'
 
@@ -8,12 +9,19 @@ export const CTA = () => {
   return (
     <Container>
       <Content>
-        <CTAButton
-          href={`https://wa.me/${whatisappNumber}?text=${mensage}`}
-          target="_blank"
+        <motion.div
+          initial={{ opacity: 0, scale: 0.94 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
         >
-          Solicitar orçamento
-        </CTAButton>
+          <CTAButton
+            href={`https://wa.me/${whatisappNumber}?text=${mensage}`}
+            target="_blank"
+          >
+            Solicitar orçamento
+          </CTAButton>
+        </motion.div>
       </Content>
     </Container>
   )

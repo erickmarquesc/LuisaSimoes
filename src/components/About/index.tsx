@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { Container } from '@/components/containers/styles'
 import { ContentAbout } from './styles'
 
@@ -7,17 +8,22 @@ export const About = () => {
   return (
     <Container>
       <ContentAbout id="about">
-        <img
+        <motion.img
           src={imgAbout}
           alt="Arquiteta Luisa, sorridente, sentada à mesa branca com cabelos longos caindo sobre o ombro. Na mesa, materiais de arquitetura, projetos e paletas de cores de parede."
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
         />
-        <div>
-          <strong>
-            Conheça
-          </strong>
-          <h1>
-            Luisa Simões
-          </h1>
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
+        >
+          <strong>Conheça</strong>
+          <h1>Luisa Simões</h1>
           <p>
             Formada em Arquitetura e Urbanismo, também sou pós-graduação em Design de Interiores.
           </p>
@@ -27,7 +33,7 @@ export const About = () => {
           <p>
             Escolhi a  Arquitetura, por me encantar com o poder de transformação que ela gera na vida das pessoas.
           </p>
-        </div>
+        </motion.div>
       </ContentAbout>
     </Container>
   )
