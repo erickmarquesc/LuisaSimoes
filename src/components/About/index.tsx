@@ -25,13 +25,14 @@ export const About = () => {
           <strong>Conheça</strong>
           <h1>Luisa Simões</h1>
           <p>
-            Formada em Arquitetura e Urbanismo, também sou pós-graduação em Design de Interiores.
+            Arquiteta e Urbanista, pós-graduada em Design de Interiores.
+            Desenvolvo projetos residenciais e comerciais que unem estética, funcionalidade e identidade, criando espaços pensados para proporcionar conforto, bem-estar e uma experiência única a quem os utiliza.
           </p>
           <p>
-            Atualmente trabalho com projetos residenciais e consultorias online para famílias que buscam a praticidade e harmonia com um bom custo beneficio.
+            Atendo clientes no Rio de Janeiro e na Região dos Lagos, conduzindo cada projeto com atenção aos detalhes e um processo personalizado, do conceito à entrega.
           </p>
           <p>
-            Escolhi a  Arquitetura, por me encantar com o poder de transformação que ela gera na vida das pessoas.
+            Acredito que a Arquitetura tem o poder de transformar a forma como vivemos e trabalhamos. Mais do que criar ambientes bonitos, meu propósito é desenvolver espaços que reflitam a essência de cada cliente e contribuam para uma rotina mais funcional, acolhedora e inspiradora.
           </p>
         </motion.div>
       </ContentAbout>
