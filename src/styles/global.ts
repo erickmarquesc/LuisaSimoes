@@ -11,6 +11,23 @@ export const GlobalStyle = createGlobalStyle`
     background: #FAFAFA;
   };
 
+  ::-webkit-scrollbar {
+    width: 8px;
+  };
+
+  ::-webkit-scrollbar-track {
+    background: #D0C5BF;
+  };
+
+  ::-webkit-scrollbar-thumb {
+    background: #C39C73;
+    border-radius: 4px;
+  };
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9D6F31;
+  };
+
   html  {
     font-weight: 400;
     font-size: 10px;
