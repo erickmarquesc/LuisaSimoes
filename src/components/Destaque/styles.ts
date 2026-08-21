@@ -2,34 +2,113 @@ import styled from 'styled-components'
 import { Container } from '../containers/styles'
 
 export const ContainerDestaque = styled(Container)`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 320px 320px 220px;
-  gap: 6px;
-  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 4rem 1.5rem;
+  max-width: 1120px;
+  margin: 0 auto;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
 `
 
-export const DestaqueItem = styled.div`
-  overflow: hidden;
+export const DestaqueText = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+`
+
+export const DestaqueTag = styled.span`
+  font-size: 2.4rem;
+  font-family: "Sanchez", serif;
+  color: ${props => props.theme['tertiary']};
+`
+
+export const DestaqueTitle = styled.h2`
+  font-size: 3.2rem;
+  font-family: "Sanchez", serif;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 32px;
+`
+
+export const DestaqueDescription = styled.p`
+  font-size: 2rem;
+  line-height: 1.8;
+  margin-bottom: 8px;
+  text-align: justify;
+  color: #444;
+
+  @media (max-width: 800px) {
+    font-size: 1.6rem;
+  }
+`
+
+export const DestaqueFicha = styled.div`
+  padding-top: 1rem;
+  border-top: 1px solid ${props => props.theme['primary']};
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  strong {
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: ${props => props.theme['secondary']};
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+
+  span {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.6;
+  }
+`
+
+export const DestaqueCarousel = styled.div`
   position: relative;
+  width: 100%;
+  height: 580px;
   border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
 
-  &:nth-child(1) { grid-column: 1; grid-row: 1 / 3; }
-  &:nth-child(2) { grid-column: 2; grid-row: 1; }
-  &:nth-child(3) { grid-column: 3; grid-row: 1; }
-  &:nth-child(4) { grid-column: 2; grid-row: 2; }
-  &:nth-child(5) { grid-column: 3; grid-row: 2; }
-  &:nth-child(6) { grid-column: 1 / 4; grid-row: 3; }
+  @media (max-width: 900px) {
+    height: 380px;
+  }
 `
 
-export const DestaqueImage = styled.img`
+export const CarouselImage = styled.img`
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
-  transition: transform 0.6s ease;
+`
 
-  ${DestaqueItem}:hover & {
-    transform: scale(1.06);
-  }
+export const CarouselDots = styled.div`
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 2;
+`
+
+export const Dot = styled.button<{ active: boolean }>`
+  width: ${props => props.active ? '20px' : '8px'};
+  height: 8px;
+  border-radius: 4px;
+  border: none;
+  background: ${props => props.active ? props.theme['secondary'] : 'rgba(255,255,255,0.6)'};
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
 `
