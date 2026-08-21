@@ -11,7 +11,12 @@ import {
   CarouselImage,
   CarouselDots,
   Dot,
+  DestaqueCTAWrapper,
+  DestaqueCTAButton,
 } from './styles'
+
+const whatsappNumber = 5521967377982
+const whatsappMessage = 'Olá Luísa, vim pelo seu site e gostaria de solicitar um orçamento com você.'
 
 import morarMais from '@/assets/imgs/projectsimg/MorarMais/morarMais.jpg'
 import morarMaisI from '@/assets/imgs/projectsimg/MorarMais/morarMaisI.jpg'
@@ -69,13 +74,13 @@ export const Destaque = () => {
         style={{ flex: '1.2', display: 'flex', flexDirection: 'column', gap: '1rem' }}
       >
         <DestaqueCarousel>
-          <AnimatePresence mode="wait">
+          <AnimatePresence mode="sync">
             <motion.div
               key={current}
-              initial={{ opacity: 0, scale: 1.04 }}
-              animate={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 0.8, ease: 'easeOut' }}
+              transition={{ duration: 1.2, ease: 'easeInOut' }}
               style={{ position: 'absolute', inset: 0 }}
             >
               <CarouselImage src={images[current]} alt={`Morar Mais Rio 2025 - foto ${current + 1}`} />
@@ -98,6 +103,15 @@ export const Destaque = () => {
           <span>Prazo de execução: 30 dias</span>
           <span>Período de exposição: 3 meses</span>
         </DestaqueFicha>
+
+        <DestaqueCTAWrapper>
+          <DestaqueCTAButton
+            href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
+            target="_blank"
+          >
+            Solicitar orçamento
+          </DestaqueCTAButton>
+        </DestaqueCTAWrapper>
       </motion.div>
     </ContainerDestaque>
   )

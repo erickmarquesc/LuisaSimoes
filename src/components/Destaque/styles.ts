@@ -112,3 +112,25 @@ export const Dot = styled.button<{ active: boolean }>`
   transition: all 0.3s ease;
   padding: 0;
 `
+
+export const DestaqueCTAWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+`
+
+export const DestaqueCTAButton = styled.a`
+  font-size: 1.6rem;
+  padding: 14px 32px;
+  border-radius: 8px;
+  text-align: center;
+  color: ${props => props.theme['white']};
+  background-color: ${props => props.theme['tertiary']};
+  text-decoration: none;
+  transition: filter 0.2s ease;
+
+  &:hover {
+    filter: brightness(0.8);
+    cursor: pointer;
+  }
+`

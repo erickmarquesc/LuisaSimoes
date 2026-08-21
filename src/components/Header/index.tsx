@@ -6,7 +6,7 @@ import { ContentMidiaLink, HeaderContent } from './styles'
 import logo from '@/assets/logo/logo-preta.svg'
 
 export const Header = () => {
-  const whatisappNumber = 5521995712126
+  const whatisappNumber = 5521967377982
   const mensage = 'Olá Luísa, vim pelo seu site e gostaria de solicitar um orçamento com você.'
 
   return (

@@ -9,10 +9,10 @@ import {
 } from './styles'
 
 export const Footer = () => {
-  const whatisappNumber = 5521995712126
+  const whatisappNumber = 5521967377982
   const mensage = 'Olá Luísa, vim pelo seu site e gostaria de solicitar um orçamento com você.'
 
-  const email = 'simoeslu23@gmail.com'
+  const email = 'luisasimoesarquitetura@gmail.com'
   const [copied, setCopied] = useState(false)
 
   const handleCopyClick = () => {
@@ -33,7 +33,7 @@ export const Footer = () => {
                 target="_blank"
               >
                 <SiWhatsapp size={20} />
-                (021) 9-9571-2126
+                (21) 9-6737-7982
               </Link>
             </li>
             <li onClick={handleCopyClick}>
