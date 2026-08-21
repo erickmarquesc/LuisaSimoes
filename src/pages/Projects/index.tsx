@@ -1,7 +1,9 @@
 import { useParams } from 'react-router-dom'
 
 import 'react-image-gallery/styles/css/image-gallery.css'
-import ImageGallery from 'react-image-gallery'
+import ImageGalleryLib, { type ReactImageGalleryProps } from 'react-image-gallery'
+
+const ImageGallery = ImageGalleryLib as unknown as React.ComponentType<ReactImageGalleryProps>
 import { Helmet } from 'react-helmet-async'
 
 import { ContainerProject, ContentProjectHero } from './styles'
