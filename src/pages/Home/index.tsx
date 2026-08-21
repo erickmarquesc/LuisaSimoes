@@ -1,10 +1,10 @@
 import { Helmet } from 'react-helmet-async'
 
-import { Services } from '@/components/ServicesCards'
 import { Mosaico } from '@/components/Mosaico'
 import { Ranger } from '@/components/Range'
 import { About } from '@/components/About'
 import { CTA } from '@/components/CTA'
+import { Destaque } from '@/components/Destaque'
 
 export const Home = () => {
   return (
@@ -13,8 +13,8 @@ export const Home = () => {
       <Mosaico />
       <About />
       <Ranger />
+      <Destaque />
       <CTA />
-      <Services />
     </>
   )
 }
