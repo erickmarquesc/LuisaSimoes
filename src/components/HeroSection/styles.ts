@@ -8,6 +8,7 @@ export const ContainerHeroSection = styled(Container)`
 
 export const ContentHeroSection = styled(Content)`
   max-width: 100%;
+  margin-bottom: 1rem;
   background-size: cover; 
   background-position: center; 
   background-image: url(${heriImg});

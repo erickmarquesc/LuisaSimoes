@@ -6,6 +6,7 @@ export const ContentLogo = styled.div`
   align-items: center;
   flex-direction: column;
 
+
   h1{
     font-weight: 400;
     font-size: 4.8rem;
