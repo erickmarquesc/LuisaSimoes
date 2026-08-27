@@ -15,8 +15,7 @@ import {
   DestaqueCTAButton,
 } from './styles'
 
-const whatsappNumber = 5521967377982
-const whatsappMessage = 'Olá Luísa, vim pelo seu site e gostaria de solicitar um orçamento com você.'
+const orcamentoLink = 'https://form.respondi.app/DkinRt4p'
 
 import morarMais from '@/assets/imgs/projectsimg/MorarMais/morarMais.jpg'
 import morarMaisI from '@/assets/imgs/projectsimg/MorarMais/morarMaisI.jpg'
@@ -106,7 +105,7 @@ export const Destaque = () => {
 
         <DestaqueCTAWrapper>
           <DestaqueCTAButton
-            href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
+            href={orcamentoLink}
             target="_blank"
           >
             Solicitar orçamento

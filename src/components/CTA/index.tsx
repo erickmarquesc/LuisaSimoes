@@ -3,9 +3,6 @@ import { Container, Content } from '@/components/containers/styles'
 import { CTAButton } from './styled'
 
 export const CTA = () => {
-  const whatisappNumber = 5521967377982
-  const mensage = 'Olá Luísa, vim pelo seu site e gostaria de solicitar um orçamento com você.'
-
   return (
     <Container>
       <Content>
@@ -16,7 +13,7 @@ export const CTA = () => {
           transition={{ duration: 0.6, ease: 'easeOut' }}
         >
           <CTAButton
-            href={`https://wa.me/${whatisappNumber}?text=${mensage}`}
+            href="https://form.respondi.app/DkinRt4p"
             target="_blank"
           >
             Solicitar orçamento
